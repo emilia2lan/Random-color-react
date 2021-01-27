@@ -5,6 +5,7 @@ export default function BoxContainer(props) {
         width: '300px',
         height: '300px',
         backgroundColor: `${props.background}`,
+        padding: '10px',
       }}
     >
       {props.text}
