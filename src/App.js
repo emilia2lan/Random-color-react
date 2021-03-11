@@ -1,13 +1,12 @@
+import randomColor from 'randomcolor';
 import React, { useState } from 'react';
 import BoxContainer from './BoxContainer.js';
-const randomColor = require('randomcolor');
 
 // Provides a random color with each click
 
 export default function App() {
-  const [emiliaColor, setEmiliaColor] = useState(randomColor);
-
-  return (
+  const [emiliaColor, setEmiliaColor] = useState('#150a77');
+   return (
     <div className="App">
       <h1>Random color generator</h1>
 
@@ -15,7 +14,7 @@ export default function App() {
 
       <button
         onClick={() => {
-          setEmiliaColor(randomColor);
+          setEmiliaColor(randomColor());
         }}
       >
         Click me!
